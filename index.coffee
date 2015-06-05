@@ -2,7 +2,8 @@ H = require "hyperweb"
 H.blastOff()
 
 post '/scores', (data) ->
-  H.data.get "" () ->
+  H.data.get ""
+  .then() ->
   H.data.set ""
 
 get '/notify', ->
