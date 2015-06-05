@@ -2,7 +2,7 @@ H = require "hyperweb"
 H.blastOff()
 
 get '/', ->
-  'Hyperweb'
+  'Hyperweb Demo'
 
 get '/notify', ->
   H.email "danielx@fogcreek.com",
