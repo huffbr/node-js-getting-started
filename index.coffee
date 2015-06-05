@@ -6,6 +6,7 @@ get "/hello", ->
 
 post '/:name', (name, data) ->
   H.data name, data
+  .the
   
 get '/:name', (name) ->
   H.data(name)
