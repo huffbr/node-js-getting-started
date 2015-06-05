@@ -6,7 +6,7 @@ post '/scores', (data) ->
   .then (scores) ->
     unless scores.length
       scores = []
-      
+
     scores.push data
 
     H.data.set "scores", scores
