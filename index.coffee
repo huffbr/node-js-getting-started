@@ -4,7 +4,7 @@ H.blastOff()
 post '/scores', (data) ->
   H.data.get "scores"
   .then (scores) ->
-    
+    score.push
 
 get '/notify', ->
   H.email "thepresident@fogcreek.com",
