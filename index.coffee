@@ -7,5 +7,5 @@ get "/hello", ->
 post '/:name', (name, data) ->
   H.data name, data
   
-get '/scores', ->
+get '/:n', ->
   H.data("scores")
