@@ -4,7 +4,7 @@ H.blastOff()
 get "/hello", ->
   "version 1"
 
-post '/scores', (data) ->
+post '/:name', (data) ->
   H.data.get "scores"
   .then (scores) ->
     scores.push data
