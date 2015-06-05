@@ -2,15 +2,12 @@ H = require "hyperweb"
 H.blastOff()
 
 get "/hello", ->
-  "version "
+  "version 1"
 
 post '/scores', (data) ->
   H.data.get "scores"
   .then (scores) ->
-    unless scores.length
-      scores = []
-
-    scores.push data
+        scores.push data
 
     H.data.set "scores", scores
 
