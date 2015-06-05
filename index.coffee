@@ -5,7 +5,7 @@ get '/', ->
   'Hyperweb Demo'
 
 get '/notify', ->
-  H.email "danielx@fogcreek.com",
+  H.email "thepresident@fogcreek.com",
     text: "I'm visiting the URL"
     subject: "Hello from HyperWeb"
 
