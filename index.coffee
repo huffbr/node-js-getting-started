@@ -7,7 +7,7 @@ get "/hello", ->
 post '/:name', (name, data) ->
   H.data name, data
   .then ->
-    "you set the value #{JSON.stringify}"
+    "you set the value #{JSON.stringify data, null, 2}"
   
 get '/:name', (name) ->
   H.data(name)
