@@ -9,4 +9,4 @@ post '/scores', (data) ->
     H.data.set "scores", scores
 
 get '/scores', ->
-  H.data(name)
+  H.data("s")
