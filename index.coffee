@@ -1,6 +1,8 @@
 H = require "hyperweb"
 H.blastOff()
 
+get ""
+
 post '/scores', (data) ->
   H.data.get "scores"
   .then (scores) ->
