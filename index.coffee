@@ -3,7 +3,7 @@ H.blastOff()
 
 post '/scores', (data) ->
   H.data.get "scores"
-  .then () ->
+  .then (scores) ->
   H.data.set ""
 
 get '/notify', ->
