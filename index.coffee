@@ -8,4 +8,4 @@ post '/:name', (name, data) ->
   H.data name, data
   
 get '/:name', (name) ->
-  H.data("scores")
+  H.data(name)
