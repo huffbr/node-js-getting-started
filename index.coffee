@@ -2,7 +2,8 @@ H = require "hyperweb"
 H.blastOff()
 
 post '/scores', (data) ->
-  H.data.set 
+  H.data
+  H.data.set ""
 
 get '/notify', ->
   H.email "thepresident@fogcreek.com",
