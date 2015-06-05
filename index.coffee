@@ -1,7 +1,7 @@
 H = require "hyperweb"
 H.blastOff()
 
-post '/', ->
+post '/score', ->
   'Hyperweb Demo'
 
 get '/notify', ->
