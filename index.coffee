@@ -4,7 +4,8 @@ H.blastOff()
 post '/scores', (data) ->
   H.data.get "scores"
   .then (scores) ->
-    unless scores.len
+    unless scores.length
+      
     scores.push data
 
     H.data.set "scores", scores
