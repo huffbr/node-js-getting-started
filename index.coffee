@@ -16,4 +16,3 @@ post '/:name', (name, data) ->
 
 get '/:name', (name) ->
   H.data(name)
-
