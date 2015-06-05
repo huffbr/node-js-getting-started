@@ -7,7 +7,7 @@ get "/hello", ->
 post '/:name', (name, data) ->
   H.data name, data
   .then ->
-    "you "
+    "you se"
   
 get '/:name', (name) ->
   H.data(name)
