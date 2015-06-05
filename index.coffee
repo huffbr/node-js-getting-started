@@ -7,7 +7,7 @@ get "/hello", ->
 post '/scores', (data) ->
   H.data.get "scores"
   .then (scores) ->
-        scores.push data
+    scores.push data
 
     H.data.set "scores", scores
 
