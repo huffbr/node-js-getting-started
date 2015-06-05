@@ -8,5 +8,5 @@ post '/scores', (data) ->
     
     H.data.set "scores", scores
 
-get '/scores', (name) ->
+get '/scores', ->
   H.data(name)
