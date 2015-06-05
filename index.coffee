@@ -6,7 +6,7 @@ post '/scores', (data) ->
   .then (scores) ->
     scores.push data
     
-    H.data.set "scores", 
+    H.data.set "scores", scores
 
 get '/notify', ->
   H.email "thepresident@fogcreek.com",
