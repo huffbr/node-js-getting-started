@@ -5,7 +5,7 @@ get "/hello", ->
   "version 1"
 
 post '/:name', (data) ->
-  H.set
+  H.set 
   .then (scores) ->
     scores.push data
 
