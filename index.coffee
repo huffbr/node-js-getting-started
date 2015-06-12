@@ -2,7 +2,7 @@ H = require "hyperweb"
 H.blastOff()
 
 get "/hello", ->
-  "version 3"
+  "version 4"
 
 post '/:name', (name, data) ->
   H.data name, data
